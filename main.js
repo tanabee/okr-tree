@@ -1,4 +1,7 @@
 var data = {};
+var COLOR = PropertiesService.getScriptProperties().getProperty("COLOR") || '#006699';
+var BOX_WIDTH = PropertiesService.getScriptProperties().getProperty("BOX_WIDTH") || '300px';
+var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '100px';
 
 function doGet() {
   var html = HtmlService.createTemplateFromFile('template').getRawContent();
@@ -19,7 +22,11 @@ function doGet() {
   findChildren(data, rows);
 
   var json = JSON.stringify(data);
-  var html = html.replace('[[json]]', json);
+  var html = html
+    .replace(/__COLOR__/g, COLOR)
+    .replace('__JSON__', json)
+    .replace('__BOX_WIDTH__', BOX_WIDTH)
+    .replace('__BOX_HEIGHT__', BOX_HEIGHT);
   return HtmlService.createHtmlOutput(html);
 }
 

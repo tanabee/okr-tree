@@ -17,32 +17,24 @@
 .orgchart .node .title {
   text-align: left;
   padding-left: 10px;
-  background-color: #006699;
+  background-color: __COLOR__;
 }
 .orgchart .node {
-  width: 400px;
+  width: __BOX_WIDTH__;
 }
 .orgchart .node .content {
-  height: 200px;
+  height: __BOX_HEIGHT__;
   text-align: left;
   padding-left: 10px;
   overflow: visible;
   overflow-y: scroll;
   white-space: normal;
-  border-color: #006699;
+  border-color: __COLOR__;
 }
-.orgchart .lines .topLine {
-  border-top: 2px solid #006699;
-}
-.orgchart .lines .rightLine {
-  border-right: 1px solid #006699;
-}
-.orgchart .lines .downLine {
-  background-color: #006699;
-}
-.orgchart .lines .leftLine {
-  border-left: 1px solid #006699;
-}
+.orgchart .lines .topLine { border-top: 2px solid __COLOR__; }
+.orgchart .lines .rightLine { border-right: 1px solid __COLOR__; }
+.orgchart .lines .downLine { background-color: __COLOR__; }
+.orgchart .lines .leftLine { border-left: 1px solid __COLOR__; }
 </style>
 </head>
 
@@ -52,18 +44,13 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.1.3/js/jquery.orgchart.min.js"></script>
 <script type="text/javascript">
-
 $(function() {
-
-  var datasource = [[json]];
-
+  var datasource = __JSON__;
   $('#chart-container').orgchart({
     'data' : datasource,
     'nodeContent': 'title',
   });
-
 });
-
 </script>
 </body>
 
