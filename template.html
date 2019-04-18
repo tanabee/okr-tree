@@ -15,9 +15,8 @@
   content: none;
 }
 .orgchart .node .title {
-  text-align: left;
-  padding-left: 10px;
-  background-color: __COLOR__;
+  background-color: transparent;
+  color: __BOX_COLOR__;
 }
 .orgchart .node {
   width: __BOX_WIDTH__;
@@ -25,16 +24,18 @@
 .orgchart .node .content {
   height: __BOX_HEIGHT__;
   text-align: left;
-  padding-left: 10px;
+  padding: 16px;
   overflow: visible;
   overflow-y: scroll;
   white-space: normal;
-  border-color: __COLOR__;
+  border-color: __BOX_COLOR__;
+  border-radius: 0;
+  border-width: 2px;
 }
-.orgchart .lines .topLine { border-top: 2px solid __COLOR__; }
-.orgchart .lines .rightLine { border-right: 1px solid __COLOR__; }
-.orgchart .lines .downLine { background-color: __COLOR__; }
-.orgchart .lines .leftLine { border-left: 1px solid __COLOR__; }
+.orgchart .lines .topLine { border-top: 2px solid __LINE_COLOR__; }
+.orgchart .lines .rightLine { border-right: 1px solid __LINE_COLOR__; }
+.orgchart .lines .downLine { background-color: __LINE_COLOR__; }
+.orgchart .lines .leftLine { border-left: 1px solid __LINE_COLOR__; }
 </style>
 </head>
 

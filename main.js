@@ -1,7 +1,8 @@
 var data = {};
-var COLOR = PropertiesService.getScriptProperties().getProperty("COLOR") || '#009EF6';
+var LINE_COLOR = PropertiesService.getScriptProperties().getProperty("LINE_COLOR") || '#B9E6FF';
+var BOX_COLOR = PropertiesService.getScriptProperties().getProperty("BOX_COLOR") || '#009EF6';
 var BOX_WIDTH = PropertiesService.getScriptProperties().getProperty("BOX_WIDTH") || '300px';
-var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '100px';
+var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '150px';
 
 function doGet() {
   var html = HtmlService.createTemplateFromFile('template').getRawContent();
@@ -23,7 +24,8 @@ function doGet() {
 
   var json = JSON.stringify(data);
   var html = html
-    .replace(/__COLOR__/g, COLOR)
+    .replace(/__BOX_COLOR__/g, BOX_COLOR)
+    .replace(/__LINE_COLOR__/g, LINE_COLOR)
     .replace(/__JSON__/g, json)
     .replace(/__BOX_WIDTH__/g, BOX_WIDTH)
     .replace(/__BOX_HEIGHT__/g, BOX_HEIGHT);
