@@ -1,5 +1,5 @@
 var data = {};
-var COLOR = PropertiesService.getScriptProperties().getProperty("COLOR") || '#006699';
+var COLOR = PropertiesService.getScriptProperties().getProperty("COLOR") || '#009EF6';
 var BOX_WIDTH = PropertiesService.getScriptProperties().getProperty("BOX_WIDTH") || '300px';
 var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '100px';
 
