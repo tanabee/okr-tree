@@ -24,9 +24,9 @@ function doGet() {
   var json = JSON.stringify(data);
   var html = html
     .replace(/__COLOR__/g, COLOR)
-    .replace('__JSON__', json)
-    .replace('__BOX_WIDTH__', BOX_WIDTH)
-    .replace('__BOX_HEIGHT__', BOX_HEIGHT);
+    .replace(/__JSON__/g, json)
+    .replace(/__BOX_WIDTH__/g, BOX_WIDTH)
+    .replace(/__BOX_HEIGHT__/g, BOX_HEIGHT);
   return HtmlService.createHtmlOutput(html);
 }
 
