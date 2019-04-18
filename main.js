@@ -2,7 +2,7 @@ var data = {};
 var LINE_COLOR = PropertiesService.getScriptProperties().getProperty("LINE_COLOR") || '#B9E6FF';
 var BOX_COLOR = PropertiesService.getScriptProperties().getProperty("BOX_COLOR") || '#009EF6';
 var BOX_WIDTH = PropertiesService.getScriptProperties().getProperty("BOX_WIDTH") || '300px';
-var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '150px';
+var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '200px';
 
 function doGet() {
   var html = HtmlService.createTemplateFromFile('template').getRawContent();
@@ -49,6 +49,6 @@ function arrayToObj(array) {
   return {
     id: array[0],
     name: array[1],
-    title: '<strong>O:</strong> ' + array[3].replace(/\n/g, '<br>') + '<br><strong>KR:</strong><br>' + array[4].replace(/\n/g, '<br>'),
+    title: '<p class="okr-label">O</p><p class="okr-text">' + array[3].replace(/\n/g, '<br>') + '</p><p class="okr-label">KR</p>' + array[4].replace(/\n/g, '<br>'),
   }
 }
