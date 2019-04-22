@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <title>OKR</title>
 <link rel="icon" href="img/logo.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/orgchart/2.1.3/css/jquery.orgchart.min.css">
 <style>
@@ -13,8 +14,10 @@ p.okr-label {
   color: #fff;
   width: 22px;
   text-align: center;
-  line-height: 2;
+  line-height: 2.1;
   margin: 8px 0;
+  font-family: Raleway;
+  font-weight: 700;
 }
 .orgchart {
   background-image: none;
@@ -25,6 +28,12 @@ p.okr-label {
 .orgchart .node .title {
   background-color: transparent;
   color: __BOX_COLOR__;
+  font-weight: bold;
+  font-size: 18px;
+  height: 32px;
+  line-height: 36px;
+  margin: 0 20px 10px 20px;
+  border-bottom: 7px solid #F9EF00;
 }
 .orgchart .node {
   width: __BOX_WIDTH__;
@@ -38,12 +47,15 @@ p.okr-label {
   white-space: normal;
   border-color: __BOX_COLOR__;
   border-radius: 0;
-  border-width: 2px;
+  border-width: 4px;
 }
-.orgchart .lines .topLine { border-top: 2px solid __LINE_COLOR__; }
-.orgchart .lines .rightLine { border-right: 1px solid __LINE_COLOR__; }
-.orgchart .lines .downLine { background-color: __LINE_COLOR__; }
-.orgchart .lines .leftLine { border-left: 1px solid __LINE_COLOR__; }
+.orgchart .lines .topLine { border-top: 4px solid __LINE_COLOR__; }
+.orgchart .lines .rightLine { border-right: 2px solid __LINE_COLOR__; }
+.orgchart .lines .leftLine { border-left: 2px solid __LINE_COLOR__; }
+.orgchart .lines .downLine {
+  background-color: __LINE_COLOR__;
+  width: 4px;
+}
 </style>
 </head>
 
