@@ -1,7 +1,7 @@
 var data = {};
 var BOX_COLOR = PropertiesService.getScriptProperties().getProperty("BOX_COLOR") || '#009EF6';
-var BOX_WIDTH = PropertiesService.getScriptProperties().getProperty("BOX_WIDTH") || '300px';
-var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '200px';
+var BOX_WIDTH = PropertiesService.getScriptProperties().getProperty("BOX_WIDTH") || '540px';
+var BOX_HEIGHT = PropertiesService.getScriptProperties().getProperty("BOX_HEIGHT") || '300px';
 var BRANCH_COLOR = PropertiesService.getScriptProperties().getProperty("BRANCH_COLOR") || '#B9E6FF';
 var UNDERLINE_COLOR = PropertiesService.getScriptProperties().getProperty("UNDERLINE_COLOR") || '#F9EF00';
 
