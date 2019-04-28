@@ -1,3 +1,11 @@
-## Usage
+## 概要
 
-https://qiita.com/tanabee/items/3c17dcdbb8efb7afe212
+![okr-tree](https://camo.qiitausercontent.com/0100e54b2ee5090edb7f24489b290df66cf898ef/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f31393639382f35306161643361642d356630632d623866332d663634342d3134656565303938623962382e6a706567)
+
+スプレッドシートに OKR の目標を書くと、社内に閉じて Web でツリー表示されるツールです。Google Apps Script を用いて作成しました。
+
+## 導入方法
+
+以下の Qiita に導入方法をまとめています。
+
+[スプレッドシートに OKR を書くとツリー構造で可視化されるツールを作ってみた](https://qiita.com/tanabee/items/3c17dcdbb8efb7afe212)
